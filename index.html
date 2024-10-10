@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poster </title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="title">Poster shop</div>
+        <div class="user-info">
+            <i class="fas fa-user"></i>
+            <span>Gabriel Alexander Dominic</span>
+            <span>17.40</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="list-item">
+            <div class="search-bar">
+                <input id="searchInput" placeholder="Barcodes or SKU..." type="text"/>
+                <button onclick="searchItems()">Search</button>
+               
+            </div>
+            <div class="items" id="itemList">
+                <div class="item" onclick="addItem('poster 1', 100)">
+                    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2a82rnnhlqQaHL3PxbL44l/1d1b3e1b0726658ec958299a49a6c238/growtopia-heroBanner.png" width="100"/>
+                    <p>poster 1</p>
+                    <p>$100.00</p>
+                </div>
+
+                
+                
+                <div class="item" onclick="addItem('Poster 2', 180)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRzjarsoU3xN9g93oy9qhU8mthPMvh3AMa8Q&s" alt="Poster 2" height="100" width="100"/>
+                    <p>Poster 2</p>
+                    <p>$180.00</p>               
+                </div>
+
+                
+
+                <div class="item" onclick="addItem('poster 3', 200)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-yx8-p34evwQ2flXPHDzRp-mYKKnYqF_Vuw&s" alt="poster 3" height="100" width="100"/>
+                    <p>poster 3</p>
+                    <p>$200.00</p>               
+                </div>
+            </div>
+        </div>
+        <div class="checkout">
+            <div class="client-account">
+                <input placeholder="Client account" type="text"/>
+                <button>Add a customer</button>
+            </div>
+            <div class="items" id="checkoutItems">
+                <p>Please add an item</p>
+            </div>
+            <div class="summary">
+                <p>
+                    <span>Net Excluding Tax</span>
+                    <span id="netExcludingTax">$0.00</span>
+                </p>
+                <p>
+                    <span>Discount</span>
+                    <span id="discount">$0.00</span>
+                </p>
+                <p>
+                    <span>Net Payable</span>
+                    <span id="netPayable">$0.00</span>
+                </p>
+            </div>
+            <div class="actions">
+                <button onclick="pay()">Pay</button>
+               
+                <button>Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>

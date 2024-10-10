@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #04141d;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .title {
+    font-size: 18px;
+}
+
+.header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.header .user-info i {
+    margin-right: 5px;
+}
+
+.header .user-info span {
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.list-item, .checkout {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.list-item {
+    flex: 2;
+}
+
+.checkout {
+    flex: 1;
+}
+
+.list-item .search-bar, .checkout .client-account {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.list-item .search-bar input, .checkout .client-account input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.list-item .search-bar button, .checkout .client-account button {
+    padding: 10px 20px;
+    background-color: #050e13;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.list-item .items, .checkout .items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-item .item, .checkout .item {
+    width: 23%;
+    margin: 1%;
+    text-align: center;
+}
+
+.list-item .item img, .checkout .item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.list-item .item p, .checkout .item p {
+    margin: 10px 0;
+}
+
+.checkout .summary {
+    margin-top: 20px;
+}
+
+.checkout .summary p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.checkout .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkout .actions button {
+    flex: 1;
+    padding: 10px;
+    background-color: #132129;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.checkout .actions button:last-child {
+    margin-right: 0;
+}
